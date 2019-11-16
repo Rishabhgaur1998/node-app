@@ -1,7 +1,8 @@
-var assert = require('assert')
-
-function test() {
-  assert.equal(2 + 2, 4);
-}
-
-if (module == require.main) require('test').run(test);
+var exports=module.exports={};
+exports.Test=function(a,b,c)
+{
+  if(a+b==c)
+		return true;
+  else
+		return false;
+};
